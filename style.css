@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav, #navBar{
+    width: 100vw;
+    background-color: black;
+    padding: 15px;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+#navBar li:nth-child(2){
+    position: relative;
+}
+
+#drop{
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 15px;
+    top: 20px;
+    left: 0;
+    display: none;   
+}
+
+#drop li{
+    margin-bottom: 15px;
+}
+
+#navBar li:nth-child(2):hover #drop{
+    display: block;
+    cursor: pointer;
+}
+
+li{
+    color: white;
+}
+
+#drop li{
+    color: black;
+}
+
+#drop2{
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 15px;
+    top: 20px;
+    left: 0;
+    display: none;   
+}
+
+#drop2 li{
+    color: black;
+}
